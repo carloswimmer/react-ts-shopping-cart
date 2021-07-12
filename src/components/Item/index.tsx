@@ -8,11 +8,13 @@ interface ItemProps {
 }
 
 const Item = ({ item, handleAddToCart }: ItemProps) => {
-  const { root, img, button, productInfo } = useStyles()
+  const { root, img, button, productInfo, imgContainer } = useStyles()
 
   return (
     <div className={root}>
-      <img className={img} src={item.image} alt={item.title} />
+      <div className={imgContainer}>
+        <img className={img} src={item.image} alt={item.title} />
+      </div>
       <div className={productInfo}>
         <h3>{item.title}</h3>
         <p>{item.description}</p>

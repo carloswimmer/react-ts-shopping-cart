@@ -14,11 +14,20 @@ export const useStyles = makeStyles({
 
   button: {
     borderRadius: '0 0 20px 20px',
+    backgroundColor: '#fff3',
+  },
+
+  imgContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    backgroundColor: '#fff',
+    padding: '8px 16px',
   },
 
   img: {
-    maxHeight: '250px',
-    objectFit: 'cover',
+    height: '250px',
+    maxWidth: '100%',
+    objectFit: 'contain',
     borderRadius: '20px 20px 0 0',
   },
 

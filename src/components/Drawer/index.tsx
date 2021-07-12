@@ -48,7 +48,7 @@ const Drawer = ({ cartOpen, handleCartOpen }: DrawerProps) => {
             )}
 
             {cartItems.map((item) => (
-              <Grid item>
+              <Grid key={item.id} item>
                 <CartItem
                   key={item.id}
                   product={item}
